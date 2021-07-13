@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         selectedMonkeysTextfield.resignFirstResponder()
     }
     
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,11 +41,8 @@ class ViewController: UIViewController {
         picker.dataSource = self
         selectedMonkeysTextfield.inputView = picker
         selectedMonkeysTextfield.inputAccessoryView = toolbar()
-        
     }
-    
 }
-
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource
 {
@@ -71,5 +69,23 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource
         default:
             return ""
         }
+    }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return monkeysList.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell()
+
+        cell.textLabel?.text = monkeysList[indexPath.row]
+
+        return cell
     }
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C24860B526833ADC00DB5271 /* JSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C24860B326833ADB00DB5271 /* JSON.json */; };
 		C24860B626833ADC00DB5271 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24860B426833ADC00DB5271 /* Parser.swift */; };
 		C2693D412682421700D8B0AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2693D402682421700D8B0AE /* AppDelegate.swift */; };
 		C2693D432682421700D8B0AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2693D422682421700D8B0AE /* SceneDelegate.swift */; };
@@ -18,6 +17,7 @@
 		C2693D582682421B00D8B0AE /* monkeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2693D572682421B00D8B0AE /* monkeysTests.swift */; };
 		C2693D632682421B00D8B0AE /* monkeysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2693D622682421B00D8B0AE /* monkeysUITests.swift */; };
 		C2693D752682454200D8B0AE /* monkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2693D742682454200D8B0AE /* monkeys.swift */; };
+		EDDD11DF269DF8A50089F2B7 /* JSON.json in Resources */ = {isa = PBXBuildFile; fileRef = EDDD11DE269DF8A50089F2B7 /* JSON.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C24860B326833ADB00DB5271 /* JSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSON.json; sourceTree = "<group>"; };
 		C24860B426833ADC00DB5271 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		C2693D3D2682421700D8B0AE /* monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monkeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2693D402682421700D8B0AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		C2693D622682421B00D8B0AE /* monkeysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monkeysUITests.swift; sourceTree = "<group>"; };
 		C2693D642682421B00D8B0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2693D742682454200D8B0AE /* monkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monkeys.swift; sourceTree = "<group>"; };
+		EDDD11DE269DF8A50089F2B7 /* JSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSON.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 		C2693D342682421700D8B0AE = {
 			isa = PBXGroup;
 			children = (
-				C24860B326833ADB00DB5271 /* JSON.json */,
+				EDDD11DE269DF8A50089F2B7 /* JSON.json */,
 				C2693D3F2682421700D8B0AE /* monkeys */,
 				C2693D562682421B00D8B0AE /* monkeysTests */,
 				C2693D612682421B00D8B0AE /* monkeysUITests */,
@@ -242,8 +242,8 @@
 			files = (
 				C2693D4D2682421A00D8B0AE /* LaunchScreen.storyboard in Resources */,
 				C2693D4A2682421A00D8B0AE /* Assets.xcassets in Resources */,
-				C24860B526833ADC00DB5271 /* JSON.json in Resources */,
 				C2693D482682421700D8B0AE /* Main.storyboard in Resources */,
+				EDDD11DF269DF8A50089F2B7 /* JSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = monkeys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = monkeys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
